@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Meal&Drink</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- style css -->
+  <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+
+  <!-- Bootstrap Stylesheet -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+
+  <!-- google font -->
+  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+    crossorigin="anonymous">
+  <link rel="shortcut icon" href="assets/images/img.png" type="image">
+
+  <!-- CSS animation library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <!-- sweet alert -->
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+  <div class="bg-gif">
+    <!-- jumbotron -->
+    <div class="jumbotron jumbotron-fluid" id="jumbo">
+      <div class="container">
+        <h1 class="display-4 wow flash" data-wow-delay="1s" data-wow-iteration="3">Meal & Drink</h1>
+        <p class="lead wow bounceInLeft" data-wow-delay="2s">
+          Plan your next meal and drink by searching for great recipes.
+        </p>
+      </div>
+    </div>
+    <!-- sample list -->
+    <div class="row sample-row">
+      <div class="col-sm-12 sample-list">
+        <span class="sample-food">
+          <img src="assets/images/00.jpg" alt="food" class="sample circle1  wow zoomInDown" data-wow-duration="1.5s">
+          <img src="assets/images/05.jpg" alt="food" class="sample circle2  wow zoomInDown" data-wow-duration="1.75s">
+          <img src="assets/images/02.jpg" alt="food" class="sample circle3  wow zoomInDown" data-wow-duration="2s">
+          <img src="assets/images/03.jpg" alt="food" class="sample circle4  wow zoomInDown" data-wow-duration="2.25s">
+          <img src="assets/images/04.jpg" alt="food" class="sample circle5  wow zoomInDown" data-wow-duration="2.5s">
+        </span>
+        <span class="sample-drink">
+          <img src="assets/images/12.jpg" alt="drink" class="sample circle6  wow zoomInDown" data-wow-duration="2.5s">
+          <img src="assets/images/13.jpg" alt="drink" class="sample circle7  wow zoomInDown" data-wow-duration="2.25s">
+          <img src="assets/images/14.jpg" alt="drink" class="sample circle8  wow zoomInDown" data-wow-duration="2s">
+          <img src="assets/images/15.jpg" alt="drink" class="sample circle9  wow zoomInDown" data-wow-duration="1.75s">
+          <img src="assets/images/16.jpg" alt="drink" class="sample circle10  wow zoomInDown" data-wow-duration="1.5s">
+        </span>
+        <br>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <!--=============== left ===============-->
+    <div class="col-sm-6 content" id="left-side">
+      <!-- food search - random - home buttons -->
+      <div id="left-default">
+        <h4> meal <i class="fas fa-utensils"></i></h4><br><br>
+        <form class="input-group mb-3 form-set">
+          <input type="text" name="search-term" placeholder="Meal Name/Ingredient :" class="form-control search-input"
+            id="food-search">
+          <input type="submit" value="Go" class="btn search-button light-green darken-3" id="food-search-button">
+        </form>
+        <button type="button" class="btn waves-effect waves-light random-button" id="food-random-button">Random<i class="fas fa-dice"></i></button>
+        &nbsp;&nbsp;&nbsp;
+        <button type="button" class="btn waves-effect waves-light home-button">Go Back <i class="fas fa-undo-alt"></i></button>
+      </div>
+
+      <!-- when click "DRINK(right side)", show information here!!! -->
+      <div class="results" id="drink-results"></div>
+      <!-- when click search: show Meal photo and video-->
+      <div class="switch-video"></div>
+      <div class="video-play"></div>
+      <div class="food-photo-container"></div>
+    </div>
+
+    <!--=============== right ===============-->
+    <div class="col-sm-6 content" id="right-side">
+      <div id="right-default">
+        <h4> drink<i class="fas fa-cocktail"></i></h4><br><br>
+        <form class="form-set input-group mb-3">
+          <input type="text" name="search-term" placeholder="Drink Name/Ingredient :" class="form-control search-input"
+            id="drink-search">
+          <input type="submit" value="Go" class="btn search-button lime darken-3" id="drink-search-button">
+        </form>
+        <button type="button" class="btn waves-effect waves-light random-button" id="drink-random-button">Random<i
+            class="fas fa-dice"></i></button>
+        &nbsp;&nbsp;&nbsp;
+        <button type="button" class="btn waves-effect waves-light home-button">Go Back <i class="fas fa-undo-alt"></i></button>
+      </div>
+
+      <!-- when click "FOOD(left side)", show information here!!! -->
+      <div class="results" id="food-results"></div>
+      <div class="results" id="food-recommend"></div>
+      <!--  when click search: show photo and video of drink -->
+      <div class="drink-photo-container"></div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="row">
+      <div class="col-sm-12">
+        <ul class="foot-references">
+          -- Reference --
+          <li>MealDB API & TheCockTailDB API</li>
+          <li>Bootstrap & Materialize</li>
+          <li>Animate.css & WOW.js</li>
+          <li>sweet alert</li>
+        </ul>
+
+        <ul class="foot-contacts">
+          -- The Expert Coders --
+          <li>Isaac Wu</li>
+          <li>Email: isaacxwu@gmail.com</li>
+          <li>Linkedin: https://www.linkedin.com/in/isaac-wu/</li>
+          <li>GitHub: https://squall2046.github.io/Bootstrap-Portfolio/</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="cp-right">Copyright &copy; 2018 The Expert Coders</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================ Links =============================== -->
+  <!-- Link and activate WOW.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+
+  <!-- jquery & javascript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+  <script src="assets/javascript/app.js"></script>
+</body>
+
+</html>

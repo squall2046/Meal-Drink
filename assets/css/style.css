@@ -1,0 +1,130 @@
+.bg-gif{
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#jumbo{
+  opacity: .9;
+  font-family: 'Pacifico', cursive;
+  margin: 0;
+  padding: 3% 0% 5%;
+}
+
+.display-4{
+margin: 2% 0;
+}
+
+.lead {
+  float: left;
+  position: relative;
+  margin:0;
+  font-size: 100% !important;
+}
+
+/* sample list */
+.sample{
+  float: left;
+  width: 8%;
+  margin: 3% 1%;
+  border-radius: 50%;
+}
+
+.sample-row{
+  margin-bottom: 0 !important;
+}
+
+/* content */
+.content {
+  text-align: center;
+  height: auto;
+  padding: 20px 0;
+  font-family: 'Pacifico', cursive;
+  font-size: 16px;
+  color:white;
+}
+
+#left-side {
+  background-image: url(../images/21.gif);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  overflow: auto;
+  width: 100%;
+  padding-bottom: 2%;
+  margin:1px 0;
+}
+#right-side {
+  background-image: url(../images/22.gif);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  overflow: auto;
+  width: 100%;
+  padding-bottom: 2%;
+  margin:1px 0;
+}
+
+.form-set{
+  width: 100%;
+}
+::placeholder {
+  color: rgb(214, 240, 238) !important;
+  opacity: 1 !important;
+}
+.search-input{
+  color: white !important;
+}
+
+
+#food-photo, #drink-photo {
+  width: 70%;
+  padding-bottom: 1%;
+  margin: 5%;
+  border-radius: 50%;
+}
+
+.switch-video{
+  position: fixed;
+  left: 2%;
+  bottom: 2%;
+  padding-bottom: 1%;
+  margin: 1%;
+  z-index: 3;
+}
+
+.results {
+  margin: 10px 50px;
+}
+
+#drink-results, #food-results, #food-recommend {
+font-family: Arial, Helvetica, sans-serif;
+}
+
+/* footer */
+footer {
+  z-index: 10;
+  background: white;
+  width: 100%;
+  bottom: 0px;
+  text-align: center;
+  font-size: 14px;
+  color: grey;
+  height: 20px;
+}
+
+.foot-references, .foot-contacts{
+  width: 50%;
+  margin-top: 1%;
+  position: relative;
+  float: left;
+}
+
+@media (max-width: 575px){
+  #jumbo{
+    padding-bottom: 15%;
+  }
+  .display-4{
+    font-size: 16px !important;
+    font-weight: bolder;
+    margin:0;
+    padding: 3% 0;
+  }
+}
