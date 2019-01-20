@@ -34,6 +34,7 @@ $(document).ready(function () {
           })
 
           // right side changes:
+          $(".drink-photo-container").empty();
           $("#right-default").hide();
           $("#food-results").empty();
           $("#food-results").append("<h4 class='wow fadeInRight'>Meal: " + response.meals[0].strMeal + "</h4>");
@@ -118,6 +119,7 @@ $(document).ready(function () {
       })
 
       // right side changes:
+      $(".drink-photo-container").empty();
       $("#right-default").hide();
       $("#food-results").empty();
       $("#food-results").append("<h4 class='wow fadeInRight'>Meal: " + response.meals[0].strMeal + "</h4>");
@@ -155,8 +157,6 @@ $(document).ready(function () {
   // Click Search Drink(right side)
   //==============================
   $("#drink-search-button").on("click", function () {
-    // $("#food-video").css("display", "none");
-    // $("#drink-video").css("display", "block");
     $(".bg-gif").css("background-image", "url(assets/images/drink.gif)")
     $("#left-side").css("background-image", "url(assets/images/31.jpg)")
     $("#right-side").css("background-image", "url(assets/images/31.jpg)")
@@ -174,6 +174,7 @@ $(document).ready(function () {
           $(".drink-photo-container").html('<img src="' + response.drinks[0].strDrinkThumb + '" alt="" class="wow fadeInRight" id="drink-photo"></img>');
 
           // left side changes:
+          $(".food-photo-container").empty();
           $("#left-default").hide();
           $("#drink-results").empty();
           $("#drink-results").append("<h4 class='wow fadeInLeft'>Drink: </br>" + response.drinks[0].strDrink + "</h4>");
@@ -217,8 +218,6 @@ $(document).ready(function () {
   // Click Random Drink(right side)
   //==============================
   $("#drink-random-button").on("click", function () {
-    // $("#food-video").css("display", "none");
-    // $("#drink-video").css("display", "block");
     $(".bg-gif").css("background-image", "url(assets/images/drink.gif)")
     $("#left-side").css("background-image", "url(assets/images/31.jpg)")
     $("#right-side").css("background-image", "url(assets/images/31.jpg)")
@@ -234,6 +233,7 @@ $(document).ready(function () {
       $(".drink-photo-container").html('<img src="' + response.drinks[0].strDrinkThumb + '" alt="" class="wow fadeInRight" id="drink-photo"></img>');
 
       // left side changes:
+      $(".food-photo-container").empty();
       $("#left-default").hide();
       $("#drink-results").empty();
       $("#drink-results").append("<h4 class='wow fadeInLeft'>Drink: </br>" + response.drinks[0].strDrink + "</h4>");
@@ -263,15 +263,11 @@ $(document).ready(function () {
   // Click Sample Pictures
   //==============================
   $(".sample-drink").on("click", function () {
-    // $("#food-video").css("display", "none");
-    // $("#drink-video").css("display", "block");
     $(".bg-gif").css("background-image", "url(assets/images/drink.gif)")
     $("#left-side").css("background-image", "url(assets/images/31.jpg)")
     $("#right-side").css("background-image", "url(assets/images/31.jpg)")
   })
   $(".sample-food").on("click", function () {
-    // $("#drink-video").css("display", "none");
-    // $("#food-video").css("display", "block");
     $(".bg-gif").css("background-image", "url(assets/images/food.gif)")
     $("#left-side").css("background-image", "url(assets/images/31.jpg)")
     $("#right-side").css("background-image", "url(assets/images/31.jpg)")
@@ -315,7 +311,7 @@ $(document).ready(function () {
         // right side changes:
         $("#left-default").show();
         $("#right-default").hide();
-        $(".drink-photo-container").attr("src", "#");
+        $(".drink-photo-container").empty();
         $("#drink-results").empty();
         $("#food-results").empty();
         $("#food-results").append("<h4>Meal: " + response.meals[0].strMeal + "</h4>");
@@ -361,11 +357,11 @@ $(document).ready(function () {
         $(circleNumber).attr("src", response.drinks[0].strDrinkThumb);
 
         // left side changes:
+        $(".food-photo-container").empty();
         $("#left-default").hide();
         $("#right-default").show();
         $("#drink-results").empty();
         $("#food-results").empty();
-        $(".food-photo-container").attr("src", "#");
         $("#drink-results").append("<h4>Drink: " + response.drinks[0].strDrink + "</h4></br>");
         $("#drink-results").append("</br> Glass type: " + response.drinks[0].strGlass);
         $("#drink-results").append("</br> Instructions: </br> " + response.drinks[0].strInstructions + "</br>");
