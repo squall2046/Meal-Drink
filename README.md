@@ -6,19 +6,20 @@ Plan your next meal and drink by searching for great recipes.
 
 ## :cocktail:Synopsis:
 Meal-Drink is a website where the user can get dinner and drink recipes and ideas all in one site. The features of Meal-Drink are: 
+
+![App Sample](/assets/images/readme-search.gif)
+![App Sample](/assets/images/readme-random.gif)
+
 <ul>
 <li>Easy to use</li>
 <li>Clear interface with Animations effects</li>
 <li>Access the information quickly</li>
-  
-![App Sample](/assets/images/readme-search.gif)
-![App Sample](/assets/images/readme-random.gif)
-
-![App Sample](/assets/images/readme-search2.gif)
-
 <li>Youtube videos lead to cook step by step</li>
 <li>Countless random Meal or Drink by one click</li>
 </ul>
+
+![App Sample](/assets/images/readme-search2.gif)
+
 
 ## :cocktail:Technologies:
 - [x] HTML5
