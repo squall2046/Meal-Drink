@@ -1,4 +1,4 @@
-# :tropical_drink:Meal-Drink
+# :tropical_drink:Meal&Drink (ISAAC)
 Plan your next meal and drink by searching for great recipes. 
 > Click  >>>**[Here](https://squall2046.github.io/Meal-Drink/)**<<<  to check the application.
 
