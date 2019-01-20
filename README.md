@@ -4,9 +4,10 @@ Plan your next meal and drink by searching for great recipes.
 
 
 ## :cocktail:Synopsis:
+Meal-Drink is a website where the user can get dinner and drink recipes and ideas all in one site. The features of Meal-Drink are: <ul>
+  
 ![App Sample](/assets/images/readme-home.gif)
 
-Meal-Drink is a website where the user can get dinner and drink recipes and ideas all in one site. The features of Meal-Drink are: <ul>
 <li>Easy to use</li>
 <li>Clear interface with Animations effects</li>
 <li>Access the information quickly</li>
