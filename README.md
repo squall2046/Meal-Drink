@@ -4,13 +4,18 @@ Plan your next meal and drink by searching for great recipes.
 
 
 ## :cocktail:Synopsis:
+![App Sample](/assets/images/readme-home.gif)
 Meal-Drink is a website where the user can get dinner and drink recipes and ideas all in one site. The features of Meal-Drink are: <ul>
 <li>Easy to use</li>
 <li>Clear interface with Animations effects</li>
 <li>Access the information quickly</li>
+![App Sample](/assets/images/readme-search.gif)
+![App Sample](/assets/images/readme-search2.gif)
 <li>Youtube videos lead to cook step by step</li>
 <li>Countless random Meal or Drink by one click</li>
 </ul>
+![App Sample](/assets/images/readme-random.gif)
+
 
 ## :cocktail:Technologies:
 - [x] HTML5
@@ -23,7 +28,7 @@ Meal-Drink is a website where the user can get dinner and drink recipes and idea
 - [x] MealDB API
 - [x] TheCockTailDB API
 
-## :construction:Author:
+## :cocktail:Author:
 * [Isaac Wu](https://github.com/squall2046)
 * [Game Repo](https://github.com/squall2046/Meal-Drink)
 
