@@ -30,7 +30,7 @@ $(document).ready(function () {
           $(".switch-video").on("click", function () {
             $(".switch-video").empty();
             $(".food-photo-container").empty();
-            $(".video-play").html('<iframe width="80%" src="' + VideoLink + '" frameborder="0" allowfullscreen></iframe>');
+            $(".video-play").html('<iframe width="600" height="400" src="' + VideoLink + '" frameborder="0" allowfullscreen></iframe>');
           })
 
           // right side changes:
@@ -115,7 +115,7 @@ $(document).ready(function () {
       $(".switch-video").on("click", function () {
         $(".switch-video").empty();
         $(".food-photo-container").empty();
-        $(".video-play").html('<iframe width="80%" src="' + VideoLink + '" frameborder="0" allowfullscreen class="wow fadeInLeft"></iframe>');
+        $(".video-play").html('<iframe width="600" height="400" src="' + VideoLink + '" frameborder="0" allowfullscreen class="wow fadeInLeft"></iframe>');
       })
 
       // right side changes:
